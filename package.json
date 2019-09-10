@@ -1,0 +1,50 @@
+{
+  "name": "react-typescript-starter",
+  "version": "1.0.0",
+  "description": "React TypeScript Starter Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./config/webpack.dev.js",
+    "build": "webpack --config ./config/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intelliapps-io/react-typescript-starter.git"
+  },
+  "author": "Intelliapps.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intelliapps-io/react-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/intelliapps-io/react-typescript-starter#readme",
+  "dependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "antd": "^3.23.2",
+    "less": "^3.10.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "typescript": "^3.6.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.1",
+    "brotli-webpack-plugin": "^1.1.0",
+    "compression-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0",
+    "ts-import-plugin": "^1.6.1",
+    "ts-loader": "^6.0.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
