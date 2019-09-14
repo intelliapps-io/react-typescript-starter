@@ -3,11 +3,7 @@ const commonConfig = require('./webpack.common'),
   ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 // modify error log so vscode can enable quick peak
-function logError(str) {
-  const parsedMsg = str.replace("(", " (").replace(__dirname, ".");
-  console.log(parsedMsg);
-  console.log(" ");
-}
+const logError = str => console.log(str.replace("(", " (").replace(__dirname, ".") + "\n")
 
 module.exports = {
   ...commonConfig,

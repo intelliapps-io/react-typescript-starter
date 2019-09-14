@@ -1,5 +1,4 @@
-const webpack = require('webpack'),
-  path = require("path"),
+const path = require("path"),
   HtmlWebpackPlugin = require("html-webpack-plugin"),
   MiniCssExtractPlugin = require("mini-css-extract-plugin"),
   tsImportPluginFactory = require('ts-import-plugin');
@@ -39,13 +38,11 @@ module.exports = {
         },
         exclude: /node_modules/
       },
-      // {
-      //   test: /\.m?js$/,
-      //   exclude: /(node_modules|bower_components)/,
-      //   use: {
-      //     loader: 'babel-loader'
-      //   }
-      // },
+      {
+        test: /\.(ts|tsx)$/,
+        loader: require.resolve('react-docgen-typescript-loader'),
+        exclude: /node_modules/
+      },
       {
         test: /\.mjs$/,
         include: /node_modules/,
@@ -56,12 +53,12 @@ module.exports = {
         use: [{
           loader: 'style-loader',
         }, {
-          loader: 'css-loader', // translates CSS into CommonJS
+          loader: 'css-loader',
         }, {
-          loader: 'less-loader', // compiles Less to CSS
+          loader: 'less-loader',
           options: {
             javascriptEnabled: true,
-          },
+          }
         }]
       },
       {

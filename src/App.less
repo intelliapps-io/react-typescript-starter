@@ -1,3 +1,24 @@
+@import "./lib/less/variables.less";
+
 .app-root {
   background-color: #eee
+}
+
+.ant-layout {
+  height: 100vh;
+
+  .ant-layout-header {
+    display: flex;
+
+    .logo {
+      margin-right: 50px;
+      span {
+        padding: 8px 25px 10px 25px;
+        font-weight: 500;
+        font-size: 19px;
+        background-color: @primary-color;
+      }
+    }
+  }
+
 }
